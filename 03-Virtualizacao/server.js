@@ -31,6 +31,7 @@ app.post('/pessoas', async (req, res) => {
     );
     res.redirect('/lista.html');
   } catch (err) {
+    console.log(err);
     res.status(500).send('Erro ao cadastrar pessoa');
   }
 });
